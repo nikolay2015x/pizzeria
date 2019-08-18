@@ -70,12 +70,12 @@ getBagButtons(){
         let id = button.dataset.id;
         let inCart = cart.find(item => item.id === id);
         if(inCart){
-            button.innerText = "In Cart";
+            button.innerText = "В Корзине";
             button.disabled = true
         }
     
             button.addEventListener('click', (event)=>{
-                event.target.innerText = "In Cart";
+                event.target.innerText = "В Корзине";
                 event.target.disabled = true;
                 // get product from products
                 let cartItem = {...Storage.getProduct(id), amount: 1};
