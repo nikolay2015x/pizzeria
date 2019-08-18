@@ -1,117 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/cheat.css">
-    <title>Document</title>
+    <title>Comfy House</title>
+    <!-- font awesome -->
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<!-- Navbar and header -->
-    <nav class="navbar">
-        <div class="navbar-center">
-            <div class="logo">
-                <img src="images/white.png" alt="banner">
-            </div>
-            <div class="navbar-link">
-                <ul>
-                    <li><a class="active" href="#">Главная</a></li>
-                    <li><a href="html/menu.html">Меню</a></li>
-                    <li><a href="html/online.html">Онлайн&nbsp;Заказ </a></li>
-                    <li><a href="html/news.html">Новости</a></li>
-                    <li onclick="show('block')"><a href="#">Войти</a></li>
-                </ul>
-            </div>
-            <div class="menu_toggle">
-                <i class="fa fa-bars" aria-hidden="true"></i>
-            </div>
-        </div>
-    </nav>
-    <header class="hero">
-        <h3>Это Ваша Пицца</h1>
-    </header>
-<!-- End of navbar and header -->
+    <!-- navbar -->
 
-    <!-- Registr -->
-    <div id="window">
-            <div class="bacg">
-                <div class="loginbox">
-                    <div onclick="show('none')" class="close">
-                        <i class="far fa-window-close"></i>
-                    </div>
-                    <h1>Войти</h1>
-                    <form>
-                        <p>Введите имя</p>
-                        <input type="text" name="login" placeholder="Логин">
-                        <p>Введите Пароль</p>
-                        <input type="password" name="password" placeholder="Пароль">
-                        <input type="submit" name="submit" value="Войти">
-                        <a href="#">Забыли пароль?</a><br>
-                        <a href="#">Регистрация</a>
-                    </form>
+        <nav class="navbar">
+            <div class="navbar-center">
+                <span class="nav-icon">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <img src="./images/logo.svg" alt="store logo">
+                <div class="cart-btn">
+                    <span class="nav-icon">
+                        <i class="fas fa-cart-plus"></i>
+                    </span>
+                    <div class="cart-items">0</div>
                 </div>
             </div>
-        </div>
-    <script>
-    function show(state) {
-        document.getElementById('window').style.display = state;
-    }
-    </script>
-<!-- End of registr -->
+        </nav>
 
-<!-- Center block -->
-    <div class="center">
-        <div class="content">
-            <div class="block-image">
-                <img src="images/1.png" alt="photo">
+    <!-- end of navbar -->
+
+    <!-- hero -->
+
+    <header class="hero">
+        <div class="banner">
+            <h1 class="banner-title">furniture collection</h1>
+            <button class="banner-btn">shop now</button>
+        </div>
+    </header>
+
+    <!-- end of hero -->
+
+    <!--products-->
+
+    <section class="products">
+        <div class="section-title">
+            <h2>our products</h2>
+        </div>
+        <div class="products-center">
+        </div>
+    </section>
+            <!-- cart -->
+
+            <div class="cart-overlay">
+                <div class="cart">
+                    <span class="close-cart">
+                        <i class="fas fa-window-close"></i>
+                    </span>
+                    <h2>your cart</h2>
+                    <div class="cart-content">
+                    <!-- cart item -->
+            
+                    <!-- <div class="cart-item">
+                        
+                    </div> -->
+            
+                    <!-- end of cart item -->
+                </div>
+                <div class="cart-footer">
+                    <h3>your total : $<span class="cart-total">0</span></h3>
+                    <button class="clear-cart banner-btn">clear cart</button>
+                </div>
             </div>
-            <div class="block-text">
-                <pre>
-        О пицца! Нежная моя,
-    Когда увижу я тебя,
-    То слюнки сразу потекут
-    И остается там и тут
-    Лишь есть. И есть, и есть тебя,
-    О пицца, милая моя!
-    Прошу останься ты со мною,
-    Люблю тебя я всей душою!
-    Клянусь всегда тобой питаться,
-    И никогда не расставаться
-    С тем вкусом чудным, ароматом…
-                </pre>
             </div>
-        </div>
-    </div>
-<!-- End of Center block -->
 
-<!-- Footer -->
-<footer>
-    <div class="footer-content">
-        <div class="tooter-text">
-            <p>© 2019 "Pizzeria Da Baffetto"</p>
-        </div>
-        <span class="footer-icon">
-            <a href="https://vk.com/feed"><i class="fab fa-vk"> </i></a>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-        </span>
-    </div>
-</footer>
-<!-- End of Footer -->
+            <!-- end of cart -->
+        
 
+    <!--end of products-->
     <script src="https://kit.fontawesome.com/41cdcd3199.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.menu_toggle').click(function () {
-                $('.navbar-link').toggleClass('active')
-            })
-        })
-    </script>
-    
+    <script src="app.js"></script>
 </body>
 </html>

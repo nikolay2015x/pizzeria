@@ -19,7 +19,7 @@ let buttonsDOM = [];
 class Products {
     async getProducts(){
         try {
-            let result = await fetch('../json/products.json');
+            let result = await fetch('products.json');
             let data = await result.json();
             let products = data.items;
             products = products.map( item => {
@@ -50,7 +50,7 @@ products.forEach(product => {
                     <img src=${product.image} alt="product" class="product-img">
                     <button class="bag-btn" data-id=${product.id}>
                         <i class="fas fa-shopping-cart"></i>
-                        В Корзину
+                        add to cart
                     </button>
                 </div>
                 <h3>${product.title}</h3>
@@ -111,7 +111,7 @@ addCartItem(item){
     <div>
         <h4>${item.title}</h4>
         <h5>$${item.price}</h5>
-        <span class="remove-item" data-id=${item.id}>Удалить</span>
+        <span class="remove-item" data-id=${item.id}>remove</span>
     </div>
     <div>
         <i class="fas fa-chevron-up" data-id=${item.id}></i>
