@@ -1,0 +1,68 @@
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "Пицца Крудайола",
+        "price": 6.50,
+        "image": { "fields": { "file": { "url": "../images/product-1.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "Пицца Регина",
+        "price": 7.00,
+        "image": { "fields": { "file": { "url": "../images/product-2.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "Пицца Маргарита",
+        "price": 6.99,
+        "image": { "fields": { "file": { "url": "../images/product-3.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "title": "Кватро Формаджи",
+        "price": 6.50,
+        "image": { "fields": { "file": { "url": "../images/product-4.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "title": "Пицца Салсичча",
+        "price": 7.0,
+        "image": { "fields": { "file": { "url": "../images/product-5.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "6" },
+      "fields": {
+        "title": "Пицца Дары Моря",
+        "price": 6.10,
+        "image": { "fields": { "file": { "url": "../images/product-6.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "7" },
+      "fields": {
+        "title": "Пицца Мексиканская",
+        "price": 6.46,
+        "image": { "fields": { "file": { "url": "../images/product-7.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "8" },
+      "fields": {
+        "title": "Пицца Итальянская",
+        "price": 5.98,
+        "image": { "fields": { "file": { "url": "../images/product-8.jpeg" } } }
+      }
+    }
+  ]
+}

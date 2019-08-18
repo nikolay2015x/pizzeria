@@ -1,0 +1,252 @@
+/* Navbar and Header */
+.navbar{
+    position: absolute;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.39);
+}
+.navbar-center{
+    max-width: 1170px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.logo{
+    width: 100%;
+}
+.navbar-link ul{
+    display: flex;
+}
+.navbar-link ul li{
+    list-style: none;
+}
+.navbar-link ul li a{
+    height: 80px;
+    color: #fff;
+    line-height: 80px;
+    padding: 0 20px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.4rem;
+}
+.navbar-link ul li a:hover,
+.navbar-link ul li a.active
+{
+    color: #fadd9f;
+    transition: 0.7s;
+}
+.menu_toggle{
+    color: #fff;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    padding: 0 20px;
+}
+.logo img{
+    width: 80%;
+}
+.hero{
+    background: url(../images/banners.png);
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center top;
+}
+.hero h3{
+    color: #fff;
+    font-size: 4.4rem;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+}
+@media (max-width: 991px){
+    .menu_toggle{
+        display: block;
+    }
+    .navbar-link{
+        left: -100%;
+        position: absolute;
+        width: 100%;
+        height: calc(701px - 80px);
+        top: 80px;
+        padding: 0;
+        transition: 0.5s;
+        background: #f39c12;
+    }
+    .navbar-link ul{
+        display: block;
+        text-align: center;
+    }
+    .navbar-link ul li a{
+        border-bottom: 1px solid rgba(0, 0, 0, .2);
+    }
+    .navbar-link.active{
+        left: 0;
+    }
+    .logo img{
+        width: 50%;
+    }
+    .hero h3{
+        font-size: 2.8rem;
+    }
+}
+@media (max-width: 500px){
+    .hero h3{
+        font-size: 2.1rem;
+    }
+}
+@media(max-width: 636px){
+    .block-text pre{
+        margin-top: 30px;
+    }
+}
+/* End of Navbar and Header */
+
+
+/* Registr */
+#window{
+    display: none;
+    z-index: 150;
+    background-color: #dfd4cc88;
+    height: 100vh;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+.loginbox{
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.avatar{
+    width: 250px;
+    height: 70px;
+    position: absolute;
+    top: -30px;
+    left: calc(50% - 130px);
+}
+.loginbox h1{
+    margin: 0;
+    padding: 0 0 20px;
+    font-size: 22px;
+    text-align: center;
+}
+.loginbox input{
+    margin-bottom: 20px;
+    width: 100%;
+}
+.loginbox input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.loginbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: #f39c12;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: #d35400;
+    color: black;
+}
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+.loginbox a:hover{
+    color: #d35400;
+}
+.close i{
+    top: 5%;
+    left: 90%;
+    position: absolute;
+    cursor: pointer;
+}
+.close i:hover{
+    color: #f39c12;
+    transition: 0.8s;
+}
+/* End of Registr */
+
+
+/* Block center */
+.center{
+    width: 100%;
+    background: #f39c12;
+    height: auto;
+    display: flex;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 1170px;
+    padding: 100px 15px;
+    align-items: center;
+}
+.block-image{
+    width: 50%;
+}
+.block-image img{
+    width: 100%;
+}
+
+.block-text pre{
+    color: #fff;
+    font-size: 1.2rem;
+}
+/* End of block center */
+
+
+/* Footer */
+footer{
+    width: 100%;
+    background: rgb(46, 46, 44);
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    align-items: center;
+    margin: auto;
+    padding: 15px;
+}
+.footer-icon a, .tooter-text{
+    font-size: 1.4rem;
+    color: #fadd9f;
+    margin: 4px;
+}
+/* End of footer */
