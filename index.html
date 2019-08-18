@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Онлайн</title>
-    <!-- font awesome -->
-
-    <!-- custom css -->
-    <link rel="stylesheet" href="css/online.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cheat.css">
+    <title>Document</title>
 </head>
+
 <body>
-    <!-- navbar -->
+<!-- Navbar and header -->
     <nav class="navbar">
         <div class="navbar-center">
             <div class="logo">
@@ -19,72 +19,76 @@
             </div>
             <div class="navbar-link">
                 <ul>
-                    <li><a href="../index.html">Главная</a></li>
-                    <li><a href="../html/menu.html">Меню</a></li>
-                    <li><a class="active" href="#">Онлайн&nbsp;Заказ </a></li>
-                    <li><a href="../html/news.html">Новости</a></li>
+                    <li><a class="active" href="#">Главная</a></li>
+                    <li><a href="html/menu.html">Меню</a></li>
+                    <li><a href="online.html">Онлайн&nbsp;Заказ </a></li>
+                    <li><a href="html/news.html">Новости</a></li>
+                    <li onclick="show('block')"><a href="#">Войти</a></li>
                 </ul>
-            </div>
-            <div class="cart-btn">
-                <span class="nav-icon">
-                    <i class="fas fa-cart-plus"></i>
-                </span>
-                <div class="cart-items">0</div>
             </div>
             <div class="menu_toggle">
                 <i class="fa fa-bars" aria-hidden="true"></i>
             </div>
         </div>
     </nav>
-    <!-- end of navbar -->
-
-
-    <!-- hero -->
     <header class="hero">
         <h3>Это Ваша Пицца</h1>
     </header>
-    <!-- end of hero -->
+<!-- End of navbar and header -->
 
-
-    <!--products-->
-    <section class="products">
-        <div class="section-title">
-            <h2>Пиццы</h2>
-        </div>
-        <div class="products-center">
-        </div>
-    </section>
-    
-            <!-- cart -->
-
-            <div class="cart-overlay">
-                <div class="cart">
-                    <span class="close-cart">
-                        <i class="fas fa-window-close"></i>
-                    </span>
-                    <h2>Ваша Корзина</h2>
-                    <div class="cart-content">
-                    <!-- cart item -->
-            
-                    <!-- <div class="cart-item">
-                        
-                    </div> -->
-            
-                    <!-- end of cart item -->
-                </div>
-                <div class="cart-footer">
-                    <h3>Сумма : $<span class="cart-total">0</span></h3>
-                    <button class="clear-cart banner-btn">Очистить Корзину</button>
+    <!-- Registr -->
+    <div id="window">
+            <div class="bacg">
+                <div class="loginbox">
+                    <div onclick="show('none')" class="close">
+                        <i class="far fa-window-close"></i>
+                    </div>
+                    <h1>Войти</h1>
+                    <form>
+                        <p>Введите имя</p>
+                        <input type="text" name="login" placeholder="Логин">
+                        <p>Введите Пароль</p>
+                        <input type="password" name="password" placeholder="Пароль">
+                        <input type="submit" name="submit" value="Войти">
+                        <a href="#">Забыли пароль?</a><br>
+                        <a href="#">Регистрация</a>
+                    </form>
                 </div>
             </div>
+        </div>
+    <script>
+    function show(state) {
+        document.getElementById('window').style.display = state;
+    }
+    </script>
+<!-- End of registr -->
+
+<!-- Center block -->
+    <div class="center">
+        <div class="content">
+            <div class="block-image">
+                <img src="images/1.png" alt="photo">
             </div>
-            <!-- end of cart -->
-        
+            <div class="block-text">
+                <pre>
+        О пицца! Нежная моя,
+    Когда увижу я тебя,
+    То слюнки сразу потекут
+    И остается там и тут
+    Лишь есть. И есть, и есть тебя,
+    О пицца, милая моя!
+    Прошу останься ты со мною,
+    Люблю тебя я всей душою!
+    Клянусь всегда тобой питаться,
+    И никогда не расставаться
+    С тем вкусом чудным, ароматом…
+                </pre>
+            </div>
+        </div>
+    </div>
+<!-- End of Center block -->
 
-    <!--end of products-->
-
-
-    <!-- Footer -->
+<!-- Footer -->
 <footer>
     <div class="footer-content">
         <div class="tooter-text">
@@ -98,6 +102,8 @@
     </div>
 </footer>
 <!-- End of Footer -->
+
+    <script src="https://kit.fontawesome.com/41cdcd3199.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
@@ -106,8 +112,6 @@
             })
         })
     </script>
-    <script src="https://kit.fontawesome.com/41cdcd3199.js"></script>
-    <script src="app.js"></script>
-
+    
 </body>
 </html>
