@@ -173,4 +173,10 @@ footer{
     color: #fadd9f;
     margin: 4px;
 }
+@media(max-width: 406px){
+    .footer-icon a, .tooter-text{
+    font-size: 1.1rem;
+    margin: 2px;
+    }
+}
 /* End of footer */
